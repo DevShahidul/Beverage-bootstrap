@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beverage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"> </script>
+
+    <!-- for carousels -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+
+<div class="menu home-menu">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white align-items-center align-items-xl-end">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<img src="img/hamb_menu.svg" alt="">
+			</button>
+			<a class="navbar-brand logo" href="#"><img src="img/main-logo.svg" alt=""></a>
+			<div class="d-flex align-items-center d-lg-none">
+				<div class="search">
+					<img class="search-triger" src="img/search_icon.svg" alt="">
+					<form action="action1">
+						<div class="mw d-flex">
+							<input type="text">
+							<button>Search</button>
+						</div>
+					</form>
+				</div>
+				<a href="" class="d-lg-none cart-link">
+					<img src="img/carticon.svg" alt="">
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="d-flex align-items-md-center navbar-inner">
+					<div class="search d-none d-lg-block">
+						<form class="form-inline d-flex">
+							<input class="form-control" type="search" aria-label="Search">
+							<button class="btn btn-outline-success" type="submit">Search</button>
+						</form>
+					</div>
+					<a class="navbar-brand logo d-lg-none" href="#"><img src="img/main-logo.svg" alt=""></a>
+					<ul class="navbar-nav ml-md-auto">
+						<li class="nav-item d-lg-none">
+							<a class="nav-link p-0 d-flex align-items-center" href="#">
+								<p class="nav-text">Categories</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link p-0 d-flex align-items-center" href="#">
+								<img class="d-none d-lg-block" src="img/account.svg" alt="">
+								<p class="nav-text">Account <span class="d-none d-lg-block">Log in/register</span></p>
+							</a>
+						</li>
+						<li class="nav-item d-lg-none">
+							<a href="" class="nav-link p-0 d-flex align-items-center">
+								<p class="nav-text">Orders</p>
+							</a>
+						</li>
+						<li class="nav-item d-lg-none">
+							<a href="" class="nav-link p-0 d-flex align-items-center">
+								<p class="nav-text">Help</p>
+							</a>
+						</li>
+						<li class="nav-item d-none d-lg-flex">
+							<a href="" class="nav-link p-0 d-flex align-items-center">
+								<img class="d-none d-lg-block" src="img/star.svg" alt="">
+								<p class="nav-text">Favourites <span class="d-none d-lg-block">Liked products</span></p>
+							</a>
+						</li>
+						<li class="nav-item d-none d-lg-flex">
+							<a href="" class="nav-link p-0 d-flex align-items-center">
+								<img class="d-none d-lg-block" src="img/carticon.svg" alt="">
+								<p class="nav-text">Cart <span class="d-none d-lg-block">Check out</span></p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+<div class="forhomemenu"></div>
+
+
+<div class="container-fluid desktop cat_desktop">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="box">
+					<p>
+						<a href="">Beer</a>
+						<a href="">Seltzer</a>
+						<a href="">Liquor</a>
+						<a href="">Wine</a>
+						<a href="">Extras</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid top_links">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p><b>Home</b> <img src="img/arrow.svg" alt=""></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid home_carousel">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				  </ol>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <div class="c_item">
+				      	<h1>Lorem ipsum</h1>
+				      	<h2>Lorem ipsum</h2>
+				      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+				      	<p class="btn_c desktop"><a href="">Shop now</a></p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="c_item">
+				      	<h1>Lorem ipsum</h1>
+				      	<h2>Lorem ipsum</h2>
+				      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+				      	<p class="btn_c desktop"><a href="">Shop now</a></p>
+				      </div>
+				    </div>
+				    <div class="carousel-item">
+				      <div class="c_item">
+				      	<h1>Lorem ipsum</h1>
+				      	<h2>Lorem ipsum</h2>
+				      	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+				      	<p class="btn_c desktop"><a href="">Shop now</a></p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid home_cat phone">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="categories">
+					<a href="" class="activated">BEER</a>
+					<a href="">SELTZER</a>
+					<a href="">LIQUOR</a>
+					<a href="">WINE</a>
+					<a href="">EXTRAS</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid slider_c slider_c1">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="cont_wrap">
+					<h1>Selected for you</h1>
+					<p class="linkforall"><a href="">View all</a></p>
+
+					<div class="content">
+						<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+						  <div class="slider__label sr-only"></div>
+						</div>
+
+					  <div class="slider">
+					    <div class="slicksl">
+					      <div class="product product_active">
+					      	<div class="placeforimg">
+					      		<img src="img/p1.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p1.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p1.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    
+					  </div>
+					  
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid slider_c slider_c2">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="cont_wrap">
+					<h1>Featured Beers</h1>
+					<p class="linkforall"><a href="">View all</a></p>
+
+					<div class="content">
+						<div class="progress orangescbar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+						  <div class="slider__label sr-only"></div>
+						</div>
+
+					  <div class="slider">
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p3.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p3.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p1.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    <div class="slicksl">
+					      <div class="product">
+					      	<div class="placeforimg">
+					      		<img src="img/p2.png" alt="">
+					      		<img src="img/star2.svg" class="star2" alt="">
+					      		<img src="img/plusicon.svg" class="plusicon" alt="">
+					      	</div>
+					      	<h2>Name of beer</h2>
+					      	<p>$15</p>
+					      	<a href="" class="btn_c">
+					      		<div class="desktop counter">
+					      			<div class="noofc">
+					      				1
+					      			</div>
+					      			<img src="img/arrow_up_c.svg" class="arrow_up_c" alt="">
+					      			<img src="img/arrow_down_c.svg" class="arrow_down_c" alt="">
+					      		</div>
+					      		Add to cart
+					      	</a>
+					      </div>
+					    </div>
+					    
+					  </div>
+					  
+					  
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container-fluid page2_s3">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="box">
+					<div class="text">
+						<h2>$20 off your first order</h2>
+						<p>Join our email list and get exclusive deals.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<form action="action1">
+					<input type="text" value="">
+					<button>Go</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>Powered by <img src="img/footerimga.svg" alt=""> 
+					<span class="delivered">© 2020, Craft Beers Delivered</span>
+					<span class="links">
+						<a href="">Terms & conditions</a>
+						<a href="">Privacy policy</a>
+						<a href="">Contact</a>
+					</span>
+				</p>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
